@@ -27,7 +27,7 @@
           .projection(projection);
       var g = svg.append("g");
       
-      d3.json("okresy.json", function(error, topology) {
+      d3.json("okresyo.json", function(error, topology) {
           g.selectAll("path")
             .data(topojson.object(topology, topology.objects.okresy)
                 .geometries)
